@@ -4,7 +4,7 @@ import Nav from "./Nav.jsx";
 const Header = () => {
     return (
         <header>
-            <img src="/vite.svg" alt="logo"/>
+            <img src="/Logo.svg" alt="logo"/>
             <Nav></Nav>
         </header>
     );
