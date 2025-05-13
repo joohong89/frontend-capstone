@@ -30,3 +30,16 @@ test('test for updateTimes', () => {
     const options = screen.getAllByTestId('booking-time-option');
     expect(options.length).toBeGreaterThan(0); // Because updateTimes returns 7 time options
 })
+
+test('test for invalid form not able to submit', () => {
+    render(<MemoryRouter initialEntries={['/booking']}>
+        <Main />
+    </MemoryRouter>);
+
+    const button = screen.getByText(/Make Your reservation/);
+    fireEvent.click(button)
+
+    // did not navigate away
+    expect(screen.getByText(/Book Now/i)).toBeInTheDocument();
+
+})
