@@ -87,6 +87,12 @@ button {
   background: var(--main-bg-color-yellow);
   color: black;
   font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  box-shadow: none;
+  border: none;
 }
 
 #specials {
@@ -141,4 +147,8 @@ button {
     margin: 1rem 1rem;
     font-weight: bold;
   }
+}
+
+.booking-form {
+  margin: 2rem auto;
 }
