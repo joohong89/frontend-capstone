@@ -152,3 +152,8 @@ button {
 .booking-form {
   margin: 2rem auto;
 }
+
+.confirmation {
+  text-align: center;
+  margin: 2rem auto;
+}

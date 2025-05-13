@@ -1,6 +1,11 @@
 import React from 'react';
 
 const BookingForm = ({data, handleChange, availableTime, handleSubmit}) => {
+
+    const onChangeHandler = (e) => {
+        handleChange(e)
+    }
+
     return (
         <>
             <h2 style={{textAlign: 'center'}}>Book Now</h2>
